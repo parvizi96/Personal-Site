@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*head*/
+
+.line{
+	border-top: 1px solid black;
+	width:100%;
+}
+/*head*/
+
+
+/*form*/
+article{
+	padding-top: 50px;
+}
+#form{
+	
+}
+#form h2{
+	text-transform: capitalize;
+	
+}
+.noSpace{
+	letter-spacing: 0em;
+}
+
+.spaceh2{
+	letter-spacing: 0.1em;
+}
+#form p{
+	word-spacing: 0.08em;
+	color: rgba(116,116,116,1.00);
+	font-size: 18px;
+	margin:20px 0px;
+}
+.spaceP{
+	letter-spacing: 0.09em;
+}
+#form label{
+	font-size: 18px;
+	
+	text-transform: capitalize;
+}
+.spaceIn{
+	letter-spacing: 0.15em;
+}
+#form input,#form textarea{
+	padding:10px;
+	border: none;
+	outline: none;
+	border-bottom:1px solid rgba(220,220,220,1.00);
+	border-radius:0px;
+	transition:all 0.5s;
+	box-shadow: none;
+}
+#form textarea{
+	border:1px solid rgba(220,220,220,1.00);
+}
+#form textarea:focus{
+	border: 1px solid black;
+	outline: none;
+	box-shadow: none;
+}
+#form input:focus{
+	border-bottom: 1px solid black;
+	outline: none;
+	box-shadow: none;
+}
+.submit{
+	border:none;
+	background:rgba(52,52,52,1.00);
+	padding:10px 15px;
+	color: aliceblue;
+	transition: all 0.5s;
+}
+.submit:hover{
+	background: black;
+}
+/*form*/
+
+/*Info*/
+.info{
+	
+	padding:50px 40px;
+	line-height: 3em;
+	font-size: 22px;
+}
+/*Info*/

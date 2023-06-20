@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parisa Parvizi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="Logo/icon3.png"/>
+	<link href="css/flag-icon.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/test.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="container-fluid">
+	
+<!--language button-->
+		<div class="dropdown hidden-xs hidden-md hidden-sm">
+			<button class="btn dropdown-toggle" data-toggle="dropdown" style="float: left;">Language : English <span class="caret"></span></button>
+			<ul class="dropdown-menu">
+				<li><a class="active"  href="index.html"><i class="flag-icon flag-icon-gb"></i>&nbsp; English</a></li>
+				<li><a href="indexFa.html"><i class="flag-icon flag-icon-ir"></i>&nbsp; فارسی</a></li>
+				<li><a href="indexAr.html"><i class="flag-icon flag-icon-sa"></i>&nbsp; عربی</a></li>
+				<li><a href="indexSp.html"><i class="flag-icon flag-icon-es"></i>&nbsp; Español</a></li>
+			</ul>
+		</div>
+        <div id="myNav" class="overlay hidden-lg">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  			<div class="overlay-content">
+				<a class="active"  href="index.html"><i class="flag-icon flag-icon-gb"></i>&nbsp; English</a>
+				<a href="indexFa.html"><i class="flag-icon flag-icon-ir"></i>&nbsp; فارسی</a>
+				<a href="indexAr.html"><i class="flag-icon flag-icon-sa"></i>&nbsp; عربی</a>
+				<a href="indexSp.html"><i class="flag-icon flag-icon-es"></i>&nbsp; Español</a>
+  			</div>
+	  	</div>
+      	<span  class="hidden-lg floatLeft" style="font-size:30px;cursor:pointer" onclick="openNav()">
+      	<i class="flag-icon flag-icon-gb"></i>
+      	</span>
+<!--language button-->
+
+
+	<div class="container">
+	
+<!--Navigation Menu-->
+          <nav>
+            <div>
+              <a href="#"><img src="Logo/Untitled3.png"/></a>
+            </div>
+            <hr>
+            <div class="navbar-header hidden-lg">
+				<div class="nav-right visible-xs">
+  <div class="button" id="btn">
+    <div class="bar top"></div>
+    <div class="bar middle"></div>
+    <div class="bar bottom"></div>
+  </div>
+</div>
+<!-- nav-right -->
+
+
+<div class="sidebar">
+  <ul class="sidebar-list">
+    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
+    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
+    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
+    <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
+  </ul>
+</div>
+        		
+			</div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+           		<ul  class="nav navbar-nav navbar-right hidden-lg">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+					
+			</div>
+            <ul id="lgNav" class="col-lg-12 hidden-sm hidden-md hidden-xs">
+              <li class="col-lg-3"><a href="#">Home</a></li>
+              <li class="col-lg-3"><a href="#">Portfolio</a></li>
+              <li class="col-lg-3"><a href="#">About Me</a></li>
+              <li class="col-lg-3"><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+<!--Navigation Menu-->
+
+<div class="clearfix"></div>
+
+ <!--Article Area-->
+            <article >
+            
+            		<div class="row">
+            		<div class="center-block col-lg-4" style="float: none;">
+            			<img src="image/under.png"/>
+            		</div>
+            	</div>
+            </article>
+<!--Article Area-->
+       
+<!--Footer-->
+			<footer>
+				<hr>
+				<div class="row">
+					<div id="socialIcon" class="center-block col-lg-6" style="float:none;">
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/parvizi96" target="_blank"><i class="fa fa-facebook"></i></a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/pariiisaa75" target="_blank"><i class="fa fa-instagram"></i></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/parisa-parvizi" target="_blank"><i class="fa fa-linkedin"></i></a>
+							</li>
+							<li>
+								<a href="https://www.pinterest.com/parvizip96" target="_blank"><i class="fa fa-pinterest"></i></a>
+							</li>
+						</ul>
+						<hr>
+						<email>Email : parvizi.p96@gmail.com , webdesign@parvizi96.ir</email>
+						
+					</div>
+				</div>
+				
+			</footer>
+<!--Footer-->
+        </div>
+	</div>
+</body>
+<script>
+	function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("myNav").style.width = "0%";
+	}
+	function myFunction(x) {
+    x.classList.toggle("change");
+	}
+	$(document).ready(function() {
+
+  function toggleSidebar() {
+    $(".button").toggleClass("active");
+    $("main").toggleClass("move-to-left");
+    $(".sidebar-item").toggleClass("active");
+  }
+
+  $(".button").on("click tap", function() {
+    toggleSidebar();
+  });
+
+  $(document).keyup(function(e) {
+    if (e.keyCode === 27) {
+      toggleSidebar();
+    }
+  });
+
+});
+</script>
+</html>
